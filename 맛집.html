@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <title>♡정말 맛있어요~✧*。</title>
+    <meta charset="utf-8">
+    <link rel ="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1><a class="theme" href="index.html">야무지게 먹어볼까~~~</a></h1>
+    <input type="button" value="night mode" onclick="change_mode(this)">
+    <p/>
+    <h3><b>[마라탕]</b>
+    <p/>
+    <a class="theme" href="https://place.map.kakao.com/622571977">►▶마화쿵부(미금역)◀◄</a><p/>
+    <a class="theme" href="https://place.map.kakao.com/1997468574">►▶향리원마라탕(정자역)◀◄</a><p/>
+    <a class="theme" href="https://place.map.kakao.com/1493346149">►▶탕화쿵푸(미금역)◀◄</a><p/>
+    <b>[떡볶이]</b>
+    <p/>
+    <a class="theme" href="https://place.map.kakao.com/26849269">►▶신전떡볶이(미금역)◀◄</a><p/>
+    <a class="theme" href="https://place.map.kakao.com/17446509">►▶엽기떡볶이(미금역)◀◄</a><p/>
+    <a class="theme" href="https://place.map.kakao.com/1896533306">►▶해피치즈스마일(서현역)◀◄</a><p/>
+    <b>[햄버거]</b>
+    <p/>
+    <a class="theme" href="https://place.map.kakao.com/250311106">►▶맘스터치(미금역)◀◄</a><p/>
+    <a class="theme" href="https://place.map.kakao.com/1904214953">►▶쉨쉑버거(서현역)◀◄</a><p/>
+    <a class="theme" href="https://place.map.kakao.com/23790453">►▶KFC(미금역)◀◄</a><p/>
+    <b>[일식]</b>
+    <p/>
+    <a class="theme" href="https://place.map.kakao.com/214471439">►▶유부남(미금역)◀◄</a><p/>
+    <a class="theme" href="https://place.map.kakao.com/524949660">►▶투쿡(미금역)◀◄</a><p/>
+    <a class="theme" href="https://place.map.kakao.com/24165248">►▶역전우동(미금역)◀◄</a><p/>
+    <b>[기타]</b>
+    <p/>
+    <a class="theme" href="https://place.map.kakao.com/26350348">►▶니뽕내뽕(서현역)◀◄</a><p/>
+    <a class="theme" href="https://place.map.kakao.com/270842494">►▶꼬꼬아찌(서현역)◀◄</a><p/>
+    <a class="theme" href="https://place.map.kakao.com/1224929032">►▶롤링파스타(서현역)◀◄</a><p/>
+    </h3>
+  </body>
+  <script>
+    function change_mode(obj) {
+      if (obj.value === "night mode") {
+        obj.value = "day mode";
+        change_night_mode();
+      } else {
+        obj.value = "night mode";
+        change_day_mode();
+      }
+    }
+    function change_night_mode() {
+      var items = document.getElementsByClassName("theme");
+
+      for (var i = 0; i < items.length; i++) {
+        items[i].style.color = "white";
+      }
+
+    document.querySelector("body").style.backgroundColor = "#5b6184"
+  }
+
+    function change_day_mode() {
+      var items = document.getElementsByClassName("theme");
+
+      for (var i = 0; i < items.length; i++) {
+        items[i].style.color = "black";
+    }
+
+    document.querySelector("body").style.backgroundColor = "white";
+  }
+  </script>
+  </html>
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Kirang+Haerang&display=swap');
+  </style>

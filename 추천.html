@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <title>♡메뉴를 추천합니다~✧*。</title>
+    <meta charset="utf-8">
+    <link rel ="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1><a class="theme" href="index.html">야무지게 먹어볼까~~~</a></h1>
+    <input type="button" value="night mode" onclick="change_mode(this)">
+    <p/>
+    <input type="button" value="▶오늘 먹을 것은~? 두구두구 clik!" onclick="what_food()">
+    <p></p>
+    <h2 class="theme">오늘 뭐 먹을까?</h2>
+    <h2><span id="today_menu" class="theme"></span></h2>
+    <p/>
+    <p/>
+    <p/>
+    <h2><a class="theme" href="맛집.html">▶주변 맛집 찾아가기!!(∩^o^)⊃━☆◀</a></h2>
+  </body>
+  <script>
+    function initialize() {
+      change_day_mode();
+    }
+
+    function what_food() {
+      var foods = new Array(
+        '엽기떡볶이 어때~?','마라탕 어때~?','칼국수 어때~?',
+        '신전떡볶이 어때~?','맘스터치 어때~?','롤링파스타 어때~?',
+        '꼬꼬아찌 어때~?','유부남 어때~?','미정국수 어때~?','해피치즈스마일 어때~?',
+        '홍콩반점 어때~?','역전우동 어때~?','KFC 어때~?','도쿄스테이크 어때~?',
+        '청년다방 어때~?','메콩타이 어때~?','bhc 어때~?','미소야 어때~?','니뽕내뽕 어때~?'
+        ,'홍대개미 어때~?','쉨쉑버거 어떄~?')
+
+    var which = get_random_int(foods.length);
+    var menu = foods[which];
+    var today = document.getElementById("today_menu");
+    today.innerHTML = menu;
+    }
+
+    function get_random_int(max) {
+      return Math.floor(Math.random() * max);
+    }
+
+    function change_mode(obj) {
+      if (obj.value === "night mode") {
+        obj.value = "day mode";
+        change_night_mode();
+      } else {
+        obj.value = "night mode";
+        change_day_mode();
+      }
+    }
+
+    function change_night_mode() {
+      var items = document.getElementsByClassName("theme");
+
+      for (var i = 0; i < items.length; i++) {
+        items[i].style.color = "white";
+      }
+
+    document.querySelector("body").style.backgroundColor = "#5b6184"
+  }
+
+    function change_day_mode() {
+      var items = document.getElementsByClassName("theme");
+
+      for (var i = 0; i < items.length; i++) {
+        items[i].style.color = "black";
+    }
+
+    document.querySelector("body").style.backgroundColor = "white";
+  }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Kirang+Haerang&display=swap');
+  </style>
+</html>

@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <title>♡후루룩 쫩좝~✧*。</title>
+    <meta charset="utf-8">
+    <link rel ="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1><a class="theme" href="index.html">야무지게 먹어볼까~~~</a></h1>
+    <input type="button" value="night mode" onclick="change_mode(this)">
+    <p></p>
+    <script>
+    function change_mode(obj) {
+      if (obj.value === "night mode") {
+        obj.value = "day mode";
+        change_night_mode();
+      } else {
+        obj.value = "night mode";
+        change_day_mode();
+      }
+    }
+    function change_night_mode() {
+      var items = document.getElementsByClassName("theme");
+
+      for (var i = 0; i < items.length; i++) {
+        items[i].style.color = "white";
+      }
+
+    document.querySelector("body").style.backgroundColor = "#5b6184"
+  }
+
+    function change_day_mode() {
+      var items = document.getElementsByClassName("theme");
+
+      for (var i = 0; i < items.length; i++) {
+        items[i].style.color = "black";
+    }
+
+    document.querySelector("body").style.backgroundColor = "white";
+  }
+  </script>
+  <h2 class="theme"> 면 류 </h2>
+    <div id="grid">
+      <ol class="theme">
+      <li><a class="theme" href="밥.html">밥 류</a></li>
+      <li><a class="theme" href="면.html">면 류</a></li>
+      <li><a class="theme" href="그외.html">그 외 음식</a></li>
+      <li><a class="theme" href="추천.html">▶오늘 뭐 먹지?◀</a></li>
+      </ol>
+      <div class="theme" id="article">
+      <h3>로제파스타</h3>
+      <p>스파게티 면을 익힌다</p>
+      <p>베이컨과 양파를 썬다!</p>
+      <p>팬에 재료를 넣고 볶다가 생크림,우유를 넣고 소금,후추 등으로 간을 한다</p>
+      <p>토마토 소스를 조금 넣고 계속 끓여주면 완성~~ 취향에 따라 새우도 넣으면 짱맛</p>
+      <img src="로제파스타.jpg" width="20%">
+      <p> </p>
+      <h3>우동</h3>
+      <p>다양한 재료로 육수를 만들고 쯔유간장을 넣는다!</p>
+      <p>간이 덜 됐다면 국간장이나 소금을 널기~!</p>
+      <p>완성된 육수에 우동면과 어묵 등을 넣고 끓이면 끝!</p>
+      <img src="우동.png" width="20%">
+      <p> </p>
+      <h3>칼국수</h3>
+      <p>멸치육수를 푹~~~ 끓여서 만든다!</p>
+      <p>칼국수 면을 넣고 조금 익으면 국간장, 멸치액젓, 다진마늘 등을 넣는다</p>
+      <p>면을 다 익히고 고명으로 마무리~</p>
+      <img src="칼국수.jpg" width="15%">
+    </div>
+   </div>
+  </body>
+</html>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Kirang+Haerang&display=swap');
+</style>

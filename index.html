@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title> (◍•ᴗ•◍)♡ ✧*。hello~ </title>
+    <meta charset="utf-8">
+    <link rel ="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1><a class="theme" href="index.html">야무지게 먹어볼까~~~</a></h1>
+    <input type="button" value="night mode" onclick="change_mode(this)">
+    <p></p>
+    <script>
+    function change_mode(obj) {
+      if (obj.value === "night mode") {
+        obj.value = "day mode";
+        change_night_mode();
+      } else {
+        obj.value = "night mode";
+        change_day_mode();
+      }
+    }
+    function change_night_mode() {
+      var items = document.getElementsByClassName("theme");
+
+      for (var i = 0; i < items.length; i++) {
+        items[i].style.color = "white";
+      }
+
+    document.querySelector("body").style.backgroundColor = "#5b6184"
+  }
+
+    function change_day_mode() {
+      var items = document.getElementsByClassName("theme");
+
+      for (var i = 0; i < items.length; i++) {
+        items[i].style.color = "black";
+    }
+
+    document.querySelector("body").style.backgroundColor = "white";
+  }
+  </script>
+    <h2 class="theme">음식 종류를 선택하세요!(╹ڡ╹)</h2>
+    <div id="main">
+      <p><a class="theme" href="밥.html">밥 류</a></p>
+      <p><a class="theme" href="면.html">면 류</a></p>
+      <p><a class="theme" href="그외.html">그 외 음식</a></p>
+      <p><a class="theme" href="추천.html">요리 귀찮아!!!사먹을랭ㅋ</a></p>
+    </div>
+  </body>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Kirang+Haerang&display=swap');
+  </style>

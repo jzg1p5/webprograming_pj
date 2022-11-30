@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <title>♡마쉿당~✧*。</title>
+    <meta charset="utf-8">
+    <link rel ="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <body>
+      <h1><a class="theme" href="index.html">야무지게 먹어볼까~~~</a></h1>
+      <input type="button" value="night mode" onclick="change_mode(this)">
+      <p></p>
+      <script>
+      function change_mode(obj) {
+        if (obj.value === "night mode") {
+          obj.value = "day mode";
+          change_night_mode();
+        } else {
+          obj.value = "night mode";
+          change_day_mode();
+        }
+      }
+      function change_night_mode() {
+        var items = document.getElementsByClassName("theme");
+
+        for (var i = 0; i < items.length; i++) {
+          items[i].style.color = "white";
+        }
+
+      document.querySelector("body").style.backgroundColor = "#5b6184"
+    }
+
+      function change_day_mode() {
+        var items = document.getElementsByClassName("theme");
+
+        for (var i = 0; i < items.length; i++) {
+          items[i].style.color = "black";
+      }
+
+      document.querySelector("body").style.backgroundColor = "white";
+    }
+    </script>
+    <h2 class="theme"> 그 외 음식 </h2>
+      <div id="grid">
+        <ol class="theme">
+        <li><a class="theme" href="밥.html">밥 류</a></li>
+        <li><a class="theme" href="면.html">면 류</a></li>
+        <li><a class="theme" href="그외.html">그 외 음식</a></li>
+        <li><a class="theme" href="추천.html">▶오늘 뭐 먹지?◀</a></li>
+        </ol>
+        <div class="theme" id="article">
+      <h3>떡볶이</h3>
+      <p>원하는 떡을 씻어서 준비한다!</p>
+      <p>물을 끓이고 소스를 넣고 끓이기! 취향에 따라 마라소스나 로제로 변경가능</p>
+      <p>준비한 떡과 어묵 등 재료들을 넣고 끓인다!</p>
+      <p>떡이 팬에 늘러붙지 않도록 주의~!하고 완성~~~</p>
+      <img src="떡볶이.jpg" width="20%">
+      <p> </p>
+      <h3>마라탕</h3>
+      <p>숙주,청경채,여러 당면 등 원하는 재료를 준비한다</p>
+      <p>사골육수와 물을 넣고 마라소스를 넣고 끓인다!</p>
+      <p>재료들을 넣고 더 끓인다! 납작당면은 국물을 흡수하므로 육수를 조금씩 추가해야함!!</p>
+      <img src="마라탕.png" width="20%">
+      <p> </p>
+      <h3>푸딩같은 계란찜</h3>
+      <p>계란과 물또는 우유를 같이 풀어준다!!</p>
+      <p>소금을 사알짝 넣어서 간을 해준다</p>
+      <p>푸딩같은 식감을 위해 거름망에 세번정도 걸러준다</p>
+      <p>그릇에 담고 물에 중탕하기! 너무 오래하면 안됨</p>
+      <p>중탕한 냄비의 뚜껑을 닫고 잔열로 익혀주면 완성~~</p>
+      <img src="계란찜.jpg" width="25%">
+    </div>
+   </div>
+  </body>
+</html>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Kirang+Haerang&display=swap');
+</style>

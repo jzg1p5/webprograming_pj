@@ -1,0 +1,54 @@
+h1{
+  font-size:100px;
+  text-align:center;
+  font-family: 'Kirang Haerang', cursive;
+  letter-spacing:7px;
+}
+h2{
+  font-size:30px;
+  text-align:center;
+  letter-spacing:7px;
+}
+h4{
+  font-size: 25px;
+}
+body{
+  margin:5px;
+}
+a{
+  color:black;
+  text-decoration:none;
+}
+#main{
+  font-size:50px;
+  text-align:center;
+}
+#grid{
+  display:grid;
+  grid-template-columns: 230px 1fr;
+}
+#grid ol{
+  border-right:5px solid #92c99f;
+  font-size:25px;
+  width:210px;
+  margin:10px;
+  padding:10px;
+}
+#article{
+  padding-left:25px;
+}
+@media(max-width:800px){
+  #grid{
+    display :block;
+  }
+  #grid ol{
+    border-right :none;
+  }
+  h1{
+    border-bottom : none;
+  }
+}
+b{
+  font-size: 30px;
+  color:#92c99f;
+}

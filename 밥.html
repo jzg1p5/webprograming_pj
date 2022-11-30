@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <title>♡밥을 머거요~✧*。</title>
+    <meta charset="utf-8">
+    <link rel ="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1><a class="theme" href="index.html">야무지게 먹어볼까~~~</a></h1>
+    <input type="button" value="night mode" onclick="change_mode(this)">
+    <p></p>
+    <script>
+    function change_mode(obj) {
+      if (obj.value === "night mode") {
+        obj.value = "day mode";
+        change_night_mode();
+      } else {
+        obj.value = "night mode";
+        change_day_mode();
+      }
+    }
+    function change_night_mode() {
+      var items = document.getElementsByClassName("theme");
+
+      for (var i = 0; i < items.length; i++) {
+        items[i].style.color = "white";
+      }
+
+    document.querySelector("body").style.backgroundColor = "#5b6184"
+  }
+
+    function change_day_mode() {
+      var items = document.getElementsByClassName("theme");
+
+      for (var i = 0; i < items.length; i++) {
+        items[i].style.color = "black";
+    }
+
+    document.querySelector("body").style.backgroundColor = "white";
+  }
+  </script>
+    <h2 class="theme"> 밥 류 </h2>
+    <div id="grid">
+      <ol class="theme">
+      <li><a class="theme" href="밥.html">밥 류</a></li>
+      <li><a class="theme" href="면.html">면 류</a></li>
+      <li><a class="theme" href="그외.html">그 외 음식</a></li>
+      <li><a class="theme" href="추천.html">▶오늘 뭐 먹지?◀</a></li>
+      </ol>
+    <div class="theme" id="article">
+      <h3>김치볶음밥</h3>
+      <p>재료들을 손질하고 팬에 기름을 두른 후, 취향에 맞게 각종 양념장 추가~!</p>
+      <p>김치 볶다가 밥 넣고 볶아주기</p>
+      <p>계란후라이도 넣으면 짱</p>
+      <img src="김치볶음밥.jpg" width="20%">
+      <p> </p>
+      <h3>연어덮밥</h3>
+      <p>달달한 양파간장볶음을 만든다!</p>
+      <p>연어를 먹기 좋은 크기로 준비~!</p>
+      <p>밥위에 양파볶음을 올리고~ 연어를 올리고~ 끝!</p>
+      <img src="연어덮밥.jpg" width="25%">
+      <p> </p>
+      <h3>유부초밥</h3>
+      <p>원하는 채소나 재료를 아주 잘게 다져서 준비한다</p>
+      <p>팬에 기름을 두르고 밥과 재료를 볶아주기</p>
+      <p>유부의 물기를 제거하고 준비한 밥 넣기!!</p>
+      <img src="유부초밥.jpg" width="20%">
+    </div>
+   </div>
+  </body>
+</html>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Kirang+Haerang&display=swap');
+</style>
